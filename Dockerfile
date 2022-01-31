@@ -1,5 +1,9 @@
 FROM golang:1.16-alpine
 
+# env
+ENV GO111MODULE=on
+ENV GOPROXY=https://goproxy.cn,direct
+
 # Set destination for COPY
 WORKDIR /app
 
